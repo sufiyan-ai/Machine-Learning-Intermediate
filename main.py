@@ -2,7 +2,7 @@ import streamlit as st
 import joblib
 import numpy as np
 
-model=joblib.load('INSAID\model.pkl')
+model=joblib.load('model.pkl')
 
 st.title('Fraud Detection System')
 
