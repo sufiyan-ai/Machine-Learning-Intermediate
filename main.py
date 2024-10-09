@@ -1,8 +1,14 @@
 import streamlit as st
 import joblib
 import numpy as np
+import os
 
-model=joblib.load('model.pkl')
+if os.path.exists('model.pkl'):
+    model = joblib.load('model.pkl')
+else:
+    st.error("Model file not found. Please upload 'model.pkl'.")
+
+st.title('Fraud Detection System')
 
 st.title('Fraud Detection System')
 
