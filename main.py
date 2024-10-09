@@ -10,8 +10,6 @@ else:
 
 st.title('Fraud Detection System')
 
-st.title('Fraud Detection System')
-
 
 inp1 = int(st.number_input("Enter the Type of Transaction: CASH_OUT: 1, PAYMENT: 2, CASH_IN: 3, TRANSFER: 4, DEBIT: 5 (integer): ",value=0))
 inp2 = float(st.number_input("Enter the Amount of Transaction (float): ",value=0))
